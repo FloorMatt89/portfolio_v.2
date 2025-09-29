@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Projects from "@/components/sections/Projects"
@@ -15,6 +15,11 @@ export default function Home() {
       title: "LinkedIn",
       href: "https://www.linkedin.com/in/matthewasegura/",
       icon: <Linkedin className="w-4 h-4"/>
+    },
+    {
+      title: "Email",
+      href: "mailto:floormatt10.12@gmail.com",
+      icon: <Mail className="w-4 h-4"/>
     }
   ]
 
