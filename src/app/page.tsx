@@ -1,10 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { Terminal, User, Code, BookOpen } from "lucide-react"
+import { Terminal, User, Code} from "lucide-react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import Home from "@/components/sections/Home"
 import About from "@/components/sections/About"
 import Projects from "@/components/sections/Projects"
