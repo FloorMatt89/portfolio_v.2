@@ -30,7 +30,8 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background text-purple-blue p-4 md:p-8 font-mono">
       <div className="flex flex-col items-center justify-center mb-8">
         <div className="text-center">
-          <pre className="hover:text-orange transition-colors duration-300 cursor-pointertext-green text-xs whitespace-pre overflow-x-auto">
+          {/* Desktop ASCII art */}
+          <pre className="hidden lg:block hover:text-orange transition-colors duration-300 cursor-pointer text-green text-xs whitespace-pre overflow-x-auto">
             {` 
   ▄▄▄▄███▄▄▄▄      ▄████████     ███         ███        ▄█    █▄       ▄████████  ▄█     █▄          ▄████████    ▄████████    ▄██████▄  ███    █▄     ▄████████    ▄████████ 
  ▄██▀▀▀███▀▀▀██▄   ███    ███ ▀█████████▄ ▀█████████▄   ███    ███     ███    ███ ███     ███        ███    ███   ███    ███   ███    ███ ███    ███   ███    ███   ███    ███ 
@@ -43,6 +44,18 @@ export default function Portfolio() {
                                                                                                                                                        ███    ███              
              `}
           </pre>
+          {/* Mobile simplified version */}
+          <div className="lg:hidden">
+             {/* Mobile simplified version */}
+          <pre className="lg:hidden hover:text-orange transition-colors duration-300 cursor-pointer text-green text-[0.5rem] md:text-xs whitespace-pre overflow-x-auto">
+            {`   __  ___      __  __  __                     _____                           
+  /  |/  /___ _/ /_/ /_/ /_  ___  _      __  / ___/___  ____ ___  ___________ _
+ / /|_/ / __ \`/ __/ __/ __ \\/ _ \\| | /| / /  \\__ \\/ _ \\/ __ \`/ / / / ___/ __ \`/
+/ /  / / /_/ / /_/ /_/ / / /  __/| |/ |/ /  ___/ /  __/ /_/ / /_/ / /  / /_/ / 
+/_/  /_/\\__,_/\\__/\\__/_/ /_/\\___/ |__/|__/  /____/\\___/\\__, /\\__,_/_/   \\__,_/  
+                                                      /____/                    `}
+          </pre>
+          </div>
           {/* <div className="flex items-center justify-center gap-4 text-green text-xl md:text-2xl mt-4">
             <span className="hover:text-orange transition-colors duration-300 cursor-pointer">iOS Developer</span>
             <span className="text-muted">•</span>
